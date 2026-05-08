@@ -1,6 +1,5 @@
-import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
+import { Outlet, Link, createRootRoute } from "@tanstack/react-router";
 import logoSrc from "@/assets/icgc-logo.png";
-import appCss from "../styles.css?url";
 
 function NotFoundComponent() {
   return (
@@ -25,56 +24,14 @@ function NotFoundComponent() {
 }
 
 export const Route = createRootRoute({
-  head: () => ({
-    meta: [
-      { charSet: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "ICGC Greater Grace Temple" },
-      { name: "description", content: "A Place of Grace. A House of Power. — ICGC Greater Grace Temple, Accra." },
-      { name: "author", content: "ICGC Greater Grace Temple" },
-      { property: "og:title", content: "ICGC Greater Grace Temple" },
-      { property: "og:description", content: "A Place of Grace. A House of Power." },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-    ],
-    links: [
-      { rel: "icon", type: "image/png", href: "/icgc-logo.png" },
-      { rel: "apple-touch-icon", href: "/icgc-logo.png" },
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap",
-      },
-      {
-        rel: "stylesheet",
-        href: appCss,
-      },
-    ],
-  }),
-  shellComponent: RootShell,
   component: RootComponent,
   notFoundComponent: NotFoundComponent,
 });
 
-function RootShell({ children }: { children: React.ReactNode }) {
-  return (
-    <html lang="en">
-      <head>
-        <HeadContent />
-      </head>
-      <body className="overflow-x-hidden">
-        {children}
-        <Scripts />
-      </body>
-    </html>
-  );
-}
-
 function RootComponent() {
   return (
     <>
-      {/* Global ICGC logo watermark — fixed, behind everything, every page */}
+      {/* Global ICGC logo watermark */}
       <div
         className="fixed inset-0 z-0 pointer-events-none select-none flex items-center justify-center overflow-hidden"
         aria-hidden

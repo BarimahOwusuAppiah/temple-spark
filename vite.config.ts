@@ -1,7 +1,16 @@
-import { defineConfig } from "@lovable.dev/vite-tanstack-config";
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import { TanStackRouterVite } from "@tanstack/router-plugin/vite";
+import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
-  // Disable Cloudflare Workers adapter so the build targets Node.js/static
-  // This allows deployment to Vercel, Netlify, or any Node host
-  cloudflare: false,
+  plugins: [
+    tsconfigPaths(),
+    TanStackRouterVite({ autoCodeSplitting: true }),
+    react(),
+  ],
+  build: {
+    outDir: "dist",
+    emptyOutDir: true,
+  },
 });
