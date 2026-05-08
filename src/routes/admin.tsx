@@ -17,7 +17,6 @@ import {
 const ADMIN_PASSWORD = "icgcadmin2025"; // ✏️ Change this
 
 export const Route = createFileRoute("/admin")({
-  head: () => ({ meta: [{ title: "Admin | ICGC Greater Grace Temple" }] }),
   component: AdminPage,
 });
 

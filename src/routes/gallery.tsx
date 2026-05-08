@@ -9,15 +9,6 @@ import { IcgcLogo } from "@/components/site/IcgcLogo";
 import { getGallery, type GallerySunday } from "@/lib/store";
 
 export const Route = createFileRoute("/gallery")({
-  head: () => ({
-    meta: [
-      { title: "Gallery | ICGC Greater Grace Temple" },
-      {
-        name: "description",
-        content: "A visual record of God's faithfulness at ICGC Greater Grace Temple — Sunday by Sunday.",
-      },
-    ],
-  }),
   component: GalleryPage,
 });
 

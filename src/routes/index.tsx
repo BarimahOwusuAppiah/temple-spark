@@ -10,23 +10,6 @@ import { FellowshipSection } from '@/components/site/FellowshipSection'
 import { Footer } from '@/components/site/Footer'
 
 export const Route = createFileRoute('/')({
-  head: () => ({
-    meta: [
-      {
-        title: 'ICGC Greater Grace Temple — A Place of Grace, A House of Power',
-      },
-      {
-        name: 'description',
-        content:
-          'Welcome to ICGC Greater Grace Temple. Join us for worship, Bible study and fellowship.',
-      },
-      { property: 'og:title', content: 'ICGC Greater Grace Temple' },
-      {
-        property: 'og:description',
-        content: 'A Place of Grace, A House of Power.',
-      },
-    ],
-  }),
   component: Index,
 })
 

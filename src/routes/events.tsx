@@ -17,15 +17,6 @@ const fadeUp = {
 };
 
 export const Route = createFileRoute("/events")({
-  head: () => ({
-    meta: [
-      { title: "Events | ICGC Greater Grace Temple" },
-      {
-        name: "description",
-        content: "Upcoming events at ICGC Greater Grace Temple — worship services, prayer nights, youth gatherings, and community outreach.",
-      },
-    ],
-  }),
   component: EventsPage,
 });
 

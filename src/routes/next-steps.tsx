@@ -17,21 +17,6 @@ const FORMSPREE_URL = "https://formspree.io/f/mzdoabzo";
 import { saveSubmission } from "@/lib/store";
 
 export const Route = createFileRoute("/next-steps")({
-  head: () => ({
-    meta: [
-      { title: "Next Steps — ICGC Greater Grace Temple" },
-      {
-        name: "description",
-        content:
-          "Take your next step at Greater Grace Temple. Join the church, volunteer, request prayer, or sign up for Bible study and water baptism.",
-      },
-      { property: "og:title", content: "Next Steps — Greater Grace Temple" },
-      {
-        property: "og:description",
-        content: "Tell us how you'd like to grow with us at Greater Grace Temple.",
-      },
-    ],
-  }),
   component: NextStepsPage,
 });
 

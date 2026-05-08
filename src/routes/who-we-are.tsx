@@ -150,15 +150,6 @@ const fadeUp = {
 };
 
 export const Route = createFileRoute("/who-we-are")({
-  head: () => ({
-    meta: [
-      { title: `Who We Are | ${CHURCH_NAME}` },
-      {
-        name: "description",
-        content: `Learn about ${CHURCH_NAME}  our identity, mission, vision, values, and community.`,
-      },
-    ],
-  }),
   component: WhoWeArePage,
 });
 

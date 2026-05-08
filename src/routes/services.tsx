@@ -44,16 +44,6 @@ const ministries = [
 ];
 
 export const Route = createFileRoute("/services")({
-  head: () => ({
-    meta: [
-      { title: "Services | ICGC Greater Grace Temple" },
-      {
-        name: "description",
-        content:
-          "Service schedule, church location, and ministries of ICGC Greater Grace Temple.",
-      },
-    ],
-  }),
   component: ServicesPage,
 });
 
