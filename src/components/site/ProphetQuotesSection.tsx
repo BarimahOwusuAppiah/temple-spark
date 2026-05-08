@@ -1,9 +1,9 @@
 import { CircularTestimonials } from "@/components/ui/circular-testimonials";
 import myphoto from "@/assets/pastor-profile-2.png"
 import myphoto1 from "@/assets/pastor-profile-1.png"
-import myphoto2 from "@/assets/church1.jpg"
-import myphoto3 from "@/assets/church2.jpg"
-import myphoto4 from "@/assets/church3.jpg"
+const myphoto2 = "/images/church1.jpg";
+const myphoto3 = "/images/church2.jpg";
+const myphoto4 = "/images/church3.jpg";
 
 
 // ============================================================

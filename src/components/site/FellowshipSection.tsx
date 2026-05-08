@@ -2,10 +2,10 @@ import { Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import img1 from "@/assets/gallery26.jpg";
-import img2 from "@/assets/gallery27.jpg";
-import img3 from "@/assets/gallery25.jpg";
-import img4 from "@/assets/gallery20.jpg";
+const img1 = "/images/gallery26.jpg";
+const img2 = "/images/gallery27.jpg";
+const img3 = "/images/gallery25.jpg";
+const img4 = "/images/gallery20.jpg";
 
 // ─────────────────────────────────────────────────────────────
 // ✏️  PHOTOS — swap any src with your own imported asset

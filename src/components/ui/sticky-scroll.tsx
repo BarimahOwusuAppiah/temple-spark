@@ -14,72 +14,49 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { HandWrittenTitle } from "@/components/ui/hand-writing-text";
-import gallery1 from "@/assets/gallery1.jpg"
-import gallery2 from "@/assets/gallery2.jpg"
-import gallery3 from "@/assets/gallery3.jpg"
-import gallery4 from "@/assets/gallery4.jpg"
-import gallery5 from "@/assets/gallery5.jpg"
-import gallery6 from "@/assets/gallery6.jpg"
-import gallery7 from "@/assets/gallery8.jpg"
-import gallery8 from "@/assets/gallery8.jpg"
-import gallery9 from "@/assets/gallery9.jpg"
-import gallery10 from "@/assets/gallery10.jpg"
-import gallery11 from "@/assets/gallery11.jpg"
-import gallery12 from "@/assets/gallery12.jpg"
-import gallery13 from "@/assets/gallery13.jpg"
-import gallery14 from "@/assets/gallery14.jpg"
-import gallery15 from "@/assets/gallery15.jpg"
-import gallery16 from "@/assets/gallery16.jpg"
-import gallery17 from "@/assets/gallery17.jpg"
-import gallery18 from "@/assets/gallery18.jpg"
-import gallery19 from "@/assets/gallery19.jpg"
-import gallery20 from "@/assets/gallery20.jpg"
-import gallery21 from "@/assets/gallery21.jpg"
-import gallery22 from "@/assets/gallery22.jpg"
-import gallery23 from "@/assets/gallery23.jpg"
-import gallery24 from "@/assets/gallery24.jpg"
-import gallery25 from "@/assets/gallery25.jpg"
-import gallery26 from "@/assets/gallery26.jpg"
+
+// Images served from /public/images/ — no Vite bundling, smaller build
+const g = (n: number) => `/images/gallery${n}.jpg`;
 
 // ─────────────────────────────────────────────────────────────────────────────
 // ✏️  EDIT YOUR IMAGES HERE
 // ─────────────────────────────────────────────────────────────────────────────
 
 const LEFT_IMAGES = [
-  { src: gallery1},
-  { src: gallery2},
-  { src:gallery3},
-  { src: gallery4},
-  { src:gallery5},
-  { src: gallery6},
-  { src: gallery7},
-  { src: gallery8 },
-  { src: gallery9 },
-  { src: gallery10 },
-  { src: gallery21 },
+  { src: g(1),  alt: "Gallery 1"  },
+  { src: g(2),  alt: "Gallery 2"  },
+  { src: g(3),  alt: "Gallery 3"  },
+  { src: g(4),  alt: "Gallery 4"  },
+  { src: g(5),  alt: "Gallery 5"  },
+  { src: g(6),  alt: "Gallery 6"  },
+  { src: g(7),  alt: "Gallery 7"  },
+  { src: g(8),  alt: "Gallery 8"  },
+  { src: g(9),  alt: "Gallery 9"  },
+  { src: g(10), alt: "Gallery 10" },
+  { src: g(21), alt: "Gallery 21" },
 ];
 
 const CENTRE_IMAGES = [
-  { src: gallery22   ,  tall: true  },
-  { src: gallery23 , tall: false },
-  { src: gallery24 ,tall: false },
-  { src: gallery24,  tall: true  },
-  { src:   gallery25, tall: false },
+  { src: g(22), alt: "Gallery 22", tall: true  },
+  { src: g(23), alt: "Gallery 23", tall: false },
+  { src: g(24), alt: "Gallery 24", tall: false },
+  { src: g(11), alt: "Gallery 11", tall: true  },
+  { src: g(25), alt: "Gallery 25", tall: false },
 ];
 
 const RIGHT_IMAGES = [
-  { src: gallery11 },
-  { src: gallery12 },
-  { src: gallery13},
-  { src: gallery14},
-  { src: gallery15},
-  { src: gallery15 },
-  { src: gallery16},
-  { src: gallery17},
-  { src: gallery18},
-  { src: gallery19 },
-  { src: gallery20 },
-  { src: gallery20 },
+  { src: g(12), alt: "Gallery 12" },
+  { src: g(13), alt: "Gallery 13" },
+  { src: g(14), alt: "Gallery 14" },
+  { src: g(15), alt: "Gallery 15" },
+  { src: g(16), alt: "Gallery 16" },
+  { src: g(17), alt: "Gallery 17" },
+  { src: g(18), alt: "Gallery 18" },
+  { src: g(19), alt: "Gallery 19" },
+  { src: g(20), alt: "Gallery 20" },
+  { src: g(26), alt: "Gallery 26" },
+  { src: g(27), alt: "Gallery 27" },
+  { src: g(2),  alt: "Gallery 2"  },
 ];
 
 // ─────────────────────────────────────────────────────────────────────────────

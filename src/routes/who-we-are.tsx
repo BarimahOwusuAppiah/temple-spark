@@ -21,10 +21,10 @@ import {
 import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
 import { Navbar } from "@/components/site/Navbar";
 import { Footer } from "@/components/site/Footer";
-import heroImg from "@/assets/church1.jpg";
-import communityImg1 from "@/assets/church2.jpg";
-import communityImg2 from "@/assets/church3.jpg";
-import communityImg3 from "@/assets/whowearepage.jpg";
+import heroImg from "@/assets/hero-worship.jpg";
+const communityImg1 = "/images/church2.jpg";
+const communityImg2 = "/images/church3.jpg";
+const communityImg3 = "/images/whowearepage.jpg";
 import pastorImg from "@/assets/pastor-profile-1.png";
 
 // ─────────────────────────────────────────────
