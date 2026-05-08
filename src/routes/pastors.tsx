@@ -82,15 +82,6 @@ const CHAPTERS: {
 // ═══════════════════════════════════════════════════════════════════════════
 
 export const Route = createFileRoute("/pastors")({
-  head: () => ({
-    meta: [
-      { title: "Our Pastor | ICGC Greater Grace Temple" },
-      {
-        name: "description",
-        content: "Meet our pastor called and anointed for such a time as this. ICGC Greater Grace Temple, Accra.",
-      },
-    ],
-  }),
   component: PastorsPage,
 });
 
