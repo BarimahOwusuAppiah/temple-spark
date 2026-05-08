@@ -1,6 +1,5 @@
-@import "tailwindcss" source(none);
+@import "tailwindcss";
 @import "tw-animate-css";
-@source "../src";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -150,11 +149,9 @@
 
   .services-watermark-bg {
     background-image:
-      radial-gradient(circle at center, rgba(255, 255, 255, 0.985), rgba(255, 255, 255, 0.995)),
-      url("/@fs/C:/Users/barim/.cursor/projects/c-Users-barim-Downloads-ICGC-Temple/assets/c__Users_barim_AppData_Roaming_Cursor_User_workspaceStorage_88f6cdeb02843cdf2b9ec79579d3f18b_images_icicg_logo-0f77f67e-1476-4264-9848-c6a403dfec02.png");
-    background-size: cover, 44px 44px;
-    background-repeat: no-repeat, repeat;
-    background-position: center, 0 0;
-    background-blend-mode: normal, lighten;
+      radial-gradient(circle at center, rgba(255, 255, 255, 0.985), rgba(255, 255, 255, 0.995));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
